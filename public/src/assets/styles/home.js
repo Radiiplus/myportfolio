@@ -119,6 +119,7 @@ export const homeStyles = `
        height:auto; 
        max-height: 43%; 
        overflow-y:auto;
+       padding: 5%;
     }
     
     .social-icons img {

@@ -135,16 +135,14 @@ export const projectStyles = `
 
 .project-link {
   display: flex;
-  align-items: center;
-  gap: 8px;
+  align-items: center; 
   text-decoration: none;
   color: #333;
-  padding-left: 2%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding: 2%;
   border-radius: 8px;
   background-color: rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
+  justify-content: center; 
 }
 
 .project-link:hover {

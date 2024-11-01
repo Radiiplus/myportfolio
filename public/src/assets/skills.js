@@ -16,7 +16,7 @@ export const skillsContent = `
 
                 <li><strong>DevOps & Security</strong>: Git, Docker, CI/CD, Server Hardening, Network Security, Penetration Testing.</li>
 
-                <li><strong>Cloud & Infrastructure</strong>: AWS, Linux Server Management, Containerization, Kubernetes.</li>
+                <li><strong>Cloud & Infrastructure</strong>: Linux Server Management, Containerization.</li>
 
                 <li><strong>Performance & Optimization</strong>: Performance Tuning, Caching Strategies, Load Balancing.</li>
 
