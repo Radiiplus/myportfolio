@@ -4,27 +4,24 @@ export const homeStyles = `
         padding: 0;
         box-sizing: border-box;
     }
-    .main-hero {
-        background-image: url('src/assets/img/hero.jpg');
-        background-size: cover;
-        background-position: center;
-        height: 100vh;
+    
+    .rem {
+    	height: auto;
         width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: center;
         align-items: center;
         color: white;
-        text-align: center;
-        padding-bottom: 20%;
-        background-color: rgba(0, 0, 0, 0.7);
-        background-blend-mode: darken;
+        padding: 5%;
+        text-align: left;
     }
 
-    .main-hero h1 {
-        font-size: 3em;
+    .rem h1 {
+        font-size: 2.5em;
         margin-bottom: 10px;
         font-weight: bold;
+        text-align: left; 
     }
 
     .description-container {
@@ -35,9 +32,9 @@ export const homeStyles = `
         padding: 20px;
         border-radius: 20px;
         margin-bottom: 20px;
-        font-size: 1.2em;
+        font-size: 15px;
         transition: max-height 0.5s ease-out;
-        overflow-y: auto;
+        overflow-y: hidden;
     }
 
     .description-container.expanded {
@@ -54,7 +51,6 @@ export const homeStyles = `
         display: flex;
         gap: 20px;
         margin-top: 20px;
-        margin-bottom: 20%;
     }
 
     .icon-item {
@@ -86,7 +82,7 @@ export const homeStyles = `
         width: 100%;
         background-color: rgba(255, 255, 255, 0.99);
         color: black;
-        padding: 20px;
+        padding: 1%;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px; 
         display: flex; 
@@ -103,21 +99,25 @@ export const homeStyles = `
     }
 
     #infoContainer {
-       height:auto; 
-       height :15%;
-       overflow-y:auto; 
-       padding-top: 10%;
+   	display: flex; 
+       height: auto; 
+       max-height :20%;
+       overflow-y: auto; 
+       justify-content: center;
+       align-items: center;
+       padding-top: 3%;
+       
     }
     
     #projectsContainer {
        height:auto; 
-       height :80%; 
+       max-height: 80%; 
        overflow-y:auto; 
     }
     
     #skillsContainer {
        height:auto; 
-       height :43%; 
+       max-height: 43%; 
        overflow-y:auto;
     }
     
@@ -171,11 +171,11 @@ export const homeStyles = `
             color: #007bff;
         }
 
-    @media (max-width: 768px) {
-       .main-hero {
+    @media (max-width: 1000px) {
+       .rem {
            justify-content:flex-end; 
            text-align:left; 
-           padding :20px; 
+           padding : 5%; 
        }
        .description-container {
            text-align:left; 

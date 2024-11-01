@@ -27,8 +27,8 @@ export const projects = [
       <p>This portfolio showcases my projects and skills as a web developer. The site was developed using the Cnest framework, which enabled me to efficiently integrate both frontend and backend functionalities. I aimed to create an intuitive and visually appealing experience for visitors to explore my work and understand my capabilities in full-stack web development.</p>
     `,
     images: ["src/assets/img/port1.jpg", "src/assets/img/port2.jpg"],
-    gitUrl: "", 
-    liveUrl: ""
+    gitUrl: "https://github.com/Radiiplus/myportfolio", 
+    liveUrl: "https://localhost3k.web.app"
   }
 ];
 

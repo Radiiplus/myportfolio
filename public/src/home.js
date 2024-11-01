@@ -10,9 +10,8 @@ export default function renderHomePage() {
       <style>
         ${homeStyles}
         ${projectStyles}
-      </style>
-
-      <div class="main-hero">
+      </style>      
+      <div class="rem">
          <h1>Welcome to Positive Vibe's Portfolio</h1>
          <div class="description-container">
              <p id="fullText" style="display:none;">
@@ -41,6 +40,7 @@ export default function renderHomePage() {
          </div>
          ${skillsContent}
      </div>
+   
     `;
 
     renderPage({

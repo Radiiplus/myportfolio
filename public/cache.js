@@ -14,7 +14,6 @@ class AdvancedCache {
     }
 
     validateTimestamp(timestamp) {
-        // Handle invalid or missing timestamps
         if (!timestamp || isNaN(new Date(timestamp).getTime())) {
             return Date.now();
         }
@@ -87,7 +86,6 @@ class AdvancedCache {
             const entry = this.cache.get(key);
             if (!entry) return null;
 
-            // Ensure createdAt exists and is valid
             if (!entry.meta || !entry.meta.createdAt || isNaN(new Date(entry.meta.createdAt).getTime())) {
                 this.cache.delete(key);
                 return null;
@@ -111,7 +109,7 @@ class AdvancedCache {
             return (Date.now() - createdAt) > this.config.maxAge;
         } catch (error) {
             console.error('Error checking expiration:', error);
-            return true; // Fail safe: treat as expired if there's an error
+            return true;
         }
     }
 
@@ -138,7 +136,7 @@ class AdvancedCache {
 
     startAutoPrune() {
         try {
-            this.stopAutoPrune(); // Clear any existing timer
+            this.stopAutoPrune(); 
             this.pruneTimer = setInterval(() => {
                 try {
                     for (const [key, entry] of this.cache.entries()) {
